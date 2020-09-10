@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QM3-de-JF3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Test Case-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CountriesViewsController" customModule="TestCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-Pb-cda">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYQ-yZ-I55">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="pml-Xe-pAP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nYQ-yZ-I55" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2DF-JC-LOk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BkZ-Pb-cda" secondAttribute="bottom" id="Cq0-vH-nuz"/>
+                            <constraint firstItem="nYQ-yZ-I55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NMb-vU-8em"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nYQ-yZ-I55" secondAttribute="trailing" id="ay7-lj-bOR"/>
+                            <constraint firstItem="BkZ-Pb-cda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npn-f2-5eK"/>
+                            <constraint firstItem="BkZ-Pb-cda" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="o4G-d2-haS"/>
+                            <constraint firstItem="BkZ-Pb-cda" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qyQ-qp-8sS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Test Case" id="031-rQ-j0t"/>
+                    <connections>
+                        <outlet property="mTableView" destination="BkZ-Pb-cda" id="EGy-me-dRT"/>
+                        <outlet property="progressAnchor" destination="nYQ-yZ-I55" id="fIl-73-EeE"/>
+                        <segue destination="k2K-gE-MWF" kind="show" identifier="show_country_detail_segue" id="jgE-P7-6h6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uEr-a1-1Wx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QM3-de-JF3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="exT-lW-cDV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                            <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vlL-dq-PPp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O5A-1g-PHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Country Detail View Controller-->
+        <scene sceneID="mEO-fP-lvq">
+            <objects>
+                <viewController id="k2K-gE-MWF" customClass="CountryDetailViewController" customModule="TestCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rXd-TX-Tj3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZN-Tv-4Zx">
+                                <rect key="frame" x="18" y="18" width="378" height="744"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="country_name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCq-9A-bhV" userLabel="country_name" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                        <rect key="frame" x="144.5" y="12" width="89.5" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                        <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWi-ea-8DX">
+                                        <rect key="frame" x="0.0" y="42" width="378" height="2"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="8bd-9C-bsK"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mMg-uI-cLg">
+                                        <rect key="frame" x="8" y="58" width="167.5" height="54.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="XHu-mK-6sj">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="54.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-fv-NdB" userLabel="Population:" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deaths:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eue-uj-Ihv" userLabel="Deaths:" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="80.5" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Update:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfB-Vc-6fG" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="41" width="80.5" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-Bn-ONw">
+                                                <rect key="frame" x="85.5" y="0.0" width="82" height="54.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSh-cl-ZPE" userLabel="owner" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="deaths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-7w-uvr" userLabel="default_branch" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="20.5" width="82" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last_updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kt-Mf-jT5" customClass="MyUILabeLField" customModule="TestCase" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="41" width="82" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="12"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="TWi-ea-8DX" firstAttribute="centerX" secondItem="YZN-Tv-4Zx" secondAttribute="centerX" id="BbU-0q-QL4"/>
+                                    <constraint firstItem="mMg-uI-cLg" firstAttribute="top" secondItem="TWi-ea-8DX" secondAttribute="bottom" constant="14" id="IXO-rf-h1L"/>
+                                    <constraint firstItem="aCq-9A-bhV" firstAttribute="top" secondItem="YZN-Tv-4Zx" secondAttribute="top" constant="12" id="JUc-vW-fHW"/>
+                                    <constraint firstItem="TWi-ea-8DX" firstAttribute="width" secondItem="YZN-Tv-4Zx" secondAttribute="width" id="TCc-UP-dNb"/>
+                                    <constraint firstItem="aCq-9A-bhV" firstAttribute="centerX" secondItem="YZN-Tv-4Zx" secondAttribute="centerX" id="acf-rJ-jH4"/>
+                                    <constraint firstItem="TWi-ea-8DX" firstAttribute="top" secondItem="YZN-Tv-4Zx" secondAttribute="top" constant="42" id="ncK-yb-Kzq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RMy-PI-2ka" firstAttribute="trailing" secondItem="YZN-Tv-4Zx" secondAttribute="trailing" constant="18" id="3ux-ax-Vhm"/>
+                            <constraint firstItem="YZN-Tv-4Zx" firstAttribute="leading" secondItem="RMy-PI-2ka" secondAttribute="leading" constant="18" id="JDM-ui-Y3a"/>
+                            <constraint firstItem="YZN-Tv-4Zx" firstAttribute="top" secondItem="RMy-PI-2ka" secondAttribute="top" constant="18" id="U1a-Ze-I84"/>
+                            <constraint firstItem="YZN-Tv-4Zx" firstAttribute="bottom" secondItem="RMy-PI-2ka" secondAttribute="bottom" constant="-12" id="fBl-vL-yRW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RMy-PI-2ka"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EAT-oc-Z48"/>
+                    <connections>
+                        <outlet property="cardView" destination="YZN-Tv-4Zx" id="dI5-gq-JEZ"/>
+                        <outlet property="countryNameLabel" destination="aCq-9A-bhV" id="IBz-V2-wMq"/>
+                        <outlet property="deathsLabel" destination="gaa-7w-uvr" id="ZeW-7V-9gO"/>
+                        <outlet property="lastUpdatedLabel" destination="7Kt-Mf-jT5" id="hid-JJ-K3Q"/>
+                        <outlet property="populationLabel" destination="cSh-cl-ZPE" id="8gP-vV-5LJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8B4-Qs-BBf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2478.2608695652175" y="-113.83928571428571"/>
+        </scene>
+    </scenes>
+</document>
