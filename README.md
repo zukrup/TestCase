@@ -8,7 +8,7 @@ Network operations
 
 	- TTGSnackbar (SwiftPackage)
 
-Ingame notification popup
+Inapp notification popup
  
 
 	- Utils/Progress/*
