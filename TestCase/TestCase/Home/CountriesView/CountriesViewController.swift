@@ -44,7 +44,7 @@ class CountriesViewsController: BaseViewController, UITableViewDelegate, UITable
             }
            
         }
-        //getCountryList()
+        getCountryList()
     }
     
     fileprivate func assignTableView() {

@@ -44,7 +44,7 @@ class CountryDetailViewController : BaseViewController {
        
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //getCountryDetail()
+        getCountryDetail()
     }
 
     func assignLayout() {

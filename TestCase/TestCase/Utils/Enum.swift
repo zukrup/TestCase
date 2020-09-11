@@ -20,7 +20,7 @@ public enum enResultCode : Int
 }
 
 
-public enum ApiRequestCommandType {
+public enum ApiRequestCommandType : Int {
     case get_countries
     case get_country_detail
      

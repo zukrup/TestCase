@@ -31,7 +31,7 @@ class Deaths : Object, Decodable {
         
         self.numbersNew = try container.decode(String?.self, forKey: .new) ?? MyStrings.sharedInstance.NOT_AVAILABLE
         self.pop_1M = try container.decode(String?.self, forKey: .pop_1M) ?? MyStrings.sharedInstance.NOT_AVAILABLE
-       self.total = try container.decode(Int.self, forKey: .total)
+       self.total = try container.decode(Int?.self, forKey: .total) ?? 0
         
     }
      

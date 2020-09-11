@@ -33,11 +33,11 @@ class Cases : Object, Decodable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
          
         self.numbersNew = try container.decode(String?.self, forKey: .new) ?? MyStrings.sharedInstance.NOT_AVAILABLE
-        self.active = try container.decode(Int.self, forKey: .active)
-        self.critical = try container.decode(Int.self, forKey: .critical)
-        self.recovered = try container.decode(Int.self, forKey: .recovered)
+        self.active = try container.decode(Int?.self, forKey: .active) ?? 0
+        self.critical = try container.decode(Int?.self, forKey: .critical) ?? 0
+        self.recovered = try container.decode(Int?.self, forKey: .recovered) ?? 0
         self.pop_1M = try container.decode(String?.self, forKey: .pop_1M) ?? MyStrings.sharedInstance.NOT_AVAILABLE
-        self.total = try container.decode(Int.self, forKey: .total)
+        self.total = try container.decode(Int?.self, forKey: .total) ?? 0
          
     }
     
