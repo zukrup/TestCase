@@ -7,27 +7,28 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Country : Decodable {
+class Country : Object, Decodable {
+     
+    @objc dynamic var continent : String = ""
+    @objc dynamic var country : String = ""
+    override static func primaryKey() -> String? {
+        return "country"
+    }
+    @objc dynamic var population : Int = 0
+    @objc dynamic var day : Date = Date()
+    @objc dynamic var time : Date = Date()
     
-    dynamic var id = 0
-    dynamic var continent : String = ""
-    dynamic var country : String = ""
-    dynamic var population : Int = 0
-    dynamic var day : Date = Date()
-    dynamic var time : Date = Date()
-    
-    dynamic var cases : Cases?
-    dynamic var deaths : Deaths?
-    dynamic var tests : Tests?
+    @objc dynamic var cases : Cases?
+    @objc dynamic var deaths : Deaths?
+    @objc dynamic var tests : Tests?
          
     
     enum CodingKeys: String, CodingKey {
         case continent = "continent", country = "country", population = "population", day = "day", time = "time", cases = "cases", deaths = "deaths", tests = "tests"
     }
-    
-    ///TODO: bazı ülkeler için nil değerler var hepsine kontrol koyulacak
-    
+     
     required convenience init(from decoder: Decoder) throws {
         self.init()
         
@@ -45,14 +46,17 @@ class Country : Decodable {
         
         if let casesObj = try container.decodeIfPresent(TestCase.Cases.self, forKey: .cases) {
             self.cases = casesObj
+            self.cases?.id = "cases_" + self.country
         }
          
         if let deathsObj = try container.decodeIfPresent(TestCase.Deaths.self, forKey: .deaths) {
             self.deaths = deathsObj
+            self.deaths?.id = "deaths_" + self.country
         }
         
         if let testsObj = try container.decodeIfPresent(TestCase.Tests.self, forKey: .tests) {
             self.tests = testsObj
+            self.tests?.id = "tests_" + self.country
         }
          
     }

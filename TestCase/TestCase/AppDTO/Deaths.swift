@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Deaths : Decodable {
+class Deaths : Object, Decodable {
      
-    dynamic var new : String = ""
-    dynamic var pop_1M : String? = nil
-    dynamic var total : Int = 0
+    @objc dynamic var id : String = ""
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    @objc dynamic var numbersNew : String = ""
+    @objc dynamic var pop_1M : String? = nil
+    @objc dynamic var total : Int = 0
 
     enum CodingKeys: String, CodingKey {
        case new = "new", pop_1M = "1M_pop", total = "total"
@@ -23,8 +29,8 @@ class Deaths : Decodable {
        
        let container = try decoder.container(keyedBy: CodingKeys.self)
         
-       self.new = try container.decode(String.self, forKey: .new) 
-       self.pop_1M = try container.decode(String.self, forKey: .pop_1M)
+        self.numbersNew = try container.decode(String?.self, forKey: .new) ?? MyStrings.sharedInstance.NOT_AVAILABLE
+        self.pop_1M = try container.decode(String?.self, forKey: .pop_1M) ?? MyStrings.sharedInstance.NOT_AVAILABLE
        self.total = try container.decode(Int.self, forKey: .total)
         
     }

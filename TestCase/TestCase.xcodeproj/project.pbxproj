@@ -22,7 +22,6 @@
 		10F2EDA3250A017F0095DE5B /* FilterOrderDescriptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2ED64250A017F0095DE5B /* FilterOrderDescriptors.swift */; };
 		10F2EDA4250A017F0095DE5B /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2ED65250A017F0095DE5B /* BaseRequest.swift */; };
 		10F2EDA5250A017F0095DE5B /* RepoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2ED68250A017F0095DE5B /* RepoResponse.swift */; };
-		10F2EDA6250A017F0095DE5B /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2ED69250A017F0095DE5B /* TokenResponse.swift */; };
 		10F2EDA7250A017F0095DE5B /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F2ED6B250A017F0095DE5B /* Comfortaa-Bold.ttf */; };
 		10F2EDA9250A017F0095DE5B /* MyStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2ED6E250A017F0095DE5B /* MyStrings.swift */; };
 		10F2EDAA250A017F0095DE5B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 10F2ED6F250A017F0095DE5B /* Localizable.strings */; };
@@ -73,6 +72,10 @@
 		10F2EDF6250A49CB0095DE5B /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F2EDEA250A49CA0095DE5B /* CountryViewCell.xib */; };
 		10F2EDF7250A49CB0095DE5B /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2EDEB250A49CA0095DE5B /* CountryViewCell.swift */; };
 		10F2EDF8250A5D640095DE5B /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F2ED6C250A017F0095DE5B /* Comfortaa-Light.ttf */; };
+		10F2EDFA250B4E3F0095DE5B /* IDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2EDF9250B4E3F0095DE5B /* IDAO.swift */; };
+		10F2EDFC250B4F9B0095DE5B /* CountryDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2EDFB250B4F9B0095DE5B /* CountryDAO.swift */; };
+		10F2EDFE250B50E60095DE5B /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2EDFD250B50E60095DE5B /* BaseDAO.swift */; };
+		10F2EE01250B52540095DE5B /* RealmCountryOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2EE00250B52540095DE5B /* RealmCountryOps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +114,6 @@
 		10F2ED64250A017F0095DE5B /* FilterOrderDescriptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOrderDescriptors.swift; sourceTree = "<group>"; };
 		10F2ED65250A017F0095DE5B /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		10F2ED68250A017F0095DE5B /* RepoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoResponse.swift; sourceTree = "<group>"; };
-		10F2ED69250A017F0095DE5B /* TokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		10F2ED6B250A017F0095DE5B /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		10F2ED6C250A017F0095DE5B /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		10F2ED6E250A017F0095DE5B /* MyStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStrings.swift; sourceTree = "<group>"; };
@@ -164,6 +166,10 @@
 		10F2EDE8250A49CA0095DE5B /* CountriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		10F2EDEA250A49CA0095DE5B /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
 		10F2EDEB250A49CA0095DE5B /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
+		10F2EDF9250B4E3F0095DE5B /* IDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAO.swift; sourceTree = "<group>"; };
+		10F2EDFB250B4F9B0095DE5B /* CountryDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDAO.swift; sourceTree = "<group>"; };
+		10F2EDFD250B50E60095DE5B /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		10F2EE00250B52540095DE5B /* RealmCountryOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCountryOps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				10F2ED67250A017F0095DE5B /* Base */,
-				10F2ED69250A017F0095DE5B /* TokenResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -327,6 +332,10 @@
 		10F2ED72250A017F0095DE5B /* AppDAO */ = {
 			isa = PBXGroup;
 			children = (
+				10F2EDFF250B521E0095DE5B /* RealmOperations */,
+				10F2EDF9250B4E3F0095DE5B /* IDAO.swift */,
+				10F2EDFB250B4F9B0095DE5B /* CountryDAO.swift */,
+				10F2EDFD250B50E60095DE5B /* BaseDAO.swift */,
 			);
 			path = AppDAO;
 			sourceTree = "<group>";
@@ -451,6 +460,14 @@
 				10F2EDEB250A49CA0095DE5B /* CountryViewCell.swift */,
 			);
 			path = CountriesView;
+			sourceTree = "<group>";
+		};
+		10F2EDFF250B521E0095DE5B /* RealmOperations */ = {
+			isa = PBXGroup;
+			children = (
+				10F2EE00250B52540095DE5B /* RealmCountryOps.swift */,
+			);
+			path = RealmOperations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,6 +617,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F2EDFA250B4E3F0095DE5B /* IDAO.swift in Sources */,
 				10F2EDF7250A49CB0095DE5B /* CountryViewCell.swift in Sources */,
 				10F2EDA1250A017F0095DE5B /* ApiRequestCommand.swift in Sources */,
 				10F2EDB3250A017F0095DE5B /* UIView+ProgressParents.swift in Sources */,
@@ -609,6 +627,7 @@
 				10F2EDBD250A017F0095DE5B /* BarProgressorView.swift in Sources */,
 				10F2EDD5250A06E50095DE5B /* Cases.swift in Sources */,
 				10F2EDCA250A017F0095DE5B /* UITableViewExtensions.swift in Sources */,
+				10F2EDFC250B4F9B0095DE5B /* CountryDAO.swift in Sources */,
 				10F2EDC2250A017F0095DE5B /* DateExtensions.swift in Sources */,
 				10F2EDC0250A017F0095DE5B /* ApplicationExtensions.swift in Sources */,
 				10F2EDC4250A017F0095DE5B /* MyUITextField.swift in Sources */,
@@ -621,6 +640,7 @@
 				10F2EDC3250A017F0095DE5B /* DoubleExtensions.swift in Sources */,
 				10F2EDAE250A017F0095DE5B /* Prog.swift in Sources */,
 				10F2EDC8250A017F0095DE5B /* UIColorExtensions.swift in Sources */,
+				10F2EDFE250B50E60095DE5B /* BaseDAO.swift in Sources */,
 				10F2EDAB250A017F0095DE5B /* Enum.swift in Sources */,
 				10F2EDB2250A017F0095DE5B /* ProgressParent.swift in Sources */,
 				10F2EDC9250A017F0095DE5B /* UIImageViewExtensions.swift in Sources */,
@@ -634,13 +654,13 @@
 				10F2EDCC250A017F0095DE5B /* UIViewControllerExtensions.swift in Sources */,
 				10F2EDB6250A017F0095DE5B /* RingProgressorView.swift in Sources */,
 				10F2EDF4250A49CB0095DE5B /* CountriesViewController.swift in Sources */,
-				10F2EDA6250A017F0095DE5B /* TokenResponse.swift in Sources */,
 				10F2EDCB250A017F0095DE5B /* UIButtonExtensions.swift in Sources */,
 				10F2EDA4250A017F0095DE5B /* BaseRequest.swift in Sources */,
 				10F2EDBC250A017F0095DE5B /* ProgressorCollection.swift in Sources */,
 				10F2EDBB250A017F0095DE5B /* ColorProgressorView.swift in Sources */,
 				10F2EDD9250A08A40095DE5B /* Tests.swift in Sources */,
 				10F2EDA3250A017F0095DE5B /* FilterOrderDescriptors.swift in Sources */,
+				10F2EE01250B52540095DE5B /* RealmCountryOps.swift in Sources */,
 				10F2EDB5250A017F0095DE5B /* Prog+Internal.swift in Sources */,
 				10F2EDB4250A017F0095DE5B /* UIViewController+ProgressParents.swift in Sources */,
 				10F2EDB9250A017F0095DE5B /* ActivityIndicatorProgressorView.swift in Sources */,

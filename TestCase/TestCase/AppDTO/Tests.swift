@@ -15,7 +15,7 @@ class Tests : Deaths {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
           
-        self.pop_1M = try container.decode(String.self, forKey: .pop_1M)
+        self.pop_1M = try container.decode(String?.self, forKey: .pop_1M) ?? MyStrings.sharedInstance.NOT_AVAILABLE
         self.total = try container.decode(Int.self, forKey: .total)
          
      }

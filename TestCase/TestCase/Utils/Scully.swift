@@ -428,6 +428,18 @@ class Scully {
         return retval!
     }
     
+    func NumberToDecimalFormat(_ number : Int?) -> String {
+       
+        var retval : String? = MyStrings.sharedInstance.NOT_AVAILABLE
+        if let int = number {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            retval = numberFormatter.string(from: NSNumber(value:int))
+        }
+        return retval!
+         
+    }
+    
     func ClearAllAlamoImagesFromCache() {
         /*
         let imageDownloader = UIImageView.af.sharedImageDownloader

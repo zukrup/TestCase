@@ -35,10 +35,16 @@ class CountriesViewsController: BaseViewController, UITableViewDelegate, UITable
     }
     
     func assignLayout() {
-        if (self.mFinalDATASET.isEmpty) {
-            getCountryList()
+        let dbCountries = CountryDAO(dbType: .realm).List().map({ $0.country })
+        self.mFinalDATASET = dbCountries
+        self.mCountriesList = dbCountries
+        if (!self.mFinalDATASET.isEmpty) {
+            dispatch_on_main {
+                self.mTableView.reloadData()
+            }
+           
         }
-            
+        //getCountryList()
     }
     
     fileprivate func assignTableView() {
