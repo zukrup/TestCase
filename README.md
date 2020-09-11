@@ -2,20 +2,21 @@
 
 ###  External libs
 
-- Alamofire (SwiftPackage)
+	- Alamofire (SwiftPackage)
 
 Network operations
 
-- TTGSnacbar (SwiftPackage)
+	- TTGSnackbar (SwiftPackage)
 
-Ingame notificaton popup
+Ingame notification popup
  
 
-- Utils/Progress/*
+	- Utils/Progress/*
 
-Progresbar lib
+Progressbar lib
 
-- Utils/SwiftyJson
+	- Utils/SwiftyJson
 
 Json Deserializer
  
+
